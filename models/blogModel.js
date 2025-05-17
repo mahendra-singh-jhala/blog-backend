@@ -17,8 +17,8 @@ const blogSchema = new mongoose.Schema({
     },
 
     author: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User"
+        type: String,
+        required: true
     },
 
     userId: {
@@ -33,7 +33,7 @@ const blogSchema = new mongoose.Schema({
 
 }, { timestamps: true })
 
-// create the user modele
+// create the blog modele
 const Blog = mongoose.model("Blog", blogSchema);
 
 module.exports = Blog;

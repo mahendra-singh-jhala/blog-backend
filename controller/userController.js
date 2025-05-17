@@ -17,7 +17,7 @@ exports.getUser = async (req, res) => {
         });
     } catch (error) {
         res.status(500).json({
-            message: 'Internal server error. Please try again later',
+            message: 'Error to get user. Please try again later',
             error: error.message,
         });
     }

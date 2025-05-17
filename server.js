@@ -3,6 +3,7 @@ const cors = require("cors")
 const connectDB = require("./config/db")
 const authRouter = require("./router/authRoutes")
 const userRouter = require("./router/userRoutes")
+const blogRouter = require("./router/blogRoutes")
 
 // Load enviornment variables
 require("dotenv").config();
@@ -23,7 +24,7 @@ app.use(cors({
 // routes
 app.use("/api/auth", authRouter)
 app.use("/api/user", userRouter)
-// app.use("/api/blog", blogRouter)
+app.use("/api/blogs", blogRouter)
 
 
 // Port
