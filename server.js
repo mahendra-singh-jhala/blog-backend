@@ -1,6 +1,8 @@
 const express = require("express")
 const cors = require("cors")
 const connectDB = require("./config/db")
+const authRouter = require("./router/authRoutes")
+const userRouter = require("./router/userRoutes")
 
 // Load enviornment variables
 require("dotenv").config();
@@ -17,6 +19,11 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true 
 }))
+
+// routes
+app.use("/api/auth", authRouter)
+app.use("/api/user", userRouter)
+// app.use("/api/blog", blogRouter)
 
 
 // Port
