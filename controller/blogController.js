@@ -33,7 +33,7 @@ exports.createBlog = async (req, res) => {
 exports.getUserAllblog = async (req, res) => {
     const userId = req.user.userId
     try {
-        const blogs = await Blog.findOne({ userId: userId})
+        const blogs = await Blog.find({ userId: userId})
         if (!blogs) {
             return res.status(404).json({
                 message: "Blog not found"
