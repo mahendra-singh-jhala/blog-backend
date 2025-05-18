@@ -1,6 +1,6 @@
 API DOCUMENTION using POSTMAN click to link
 
-URL = https://documenter.getpostman.com/view/38758930/2sAXxPAsgm
+URL = https://documenter.getpostman.com/view/38758930/2sB2qXj3Aw
 
 
 <!-- Check upper Link -->
