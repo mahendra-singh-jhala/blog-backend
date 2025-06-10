@@ -21,10 +21,9 @@ Create, read, update, and delete blogs securely with user authentication and acc
 ## 🛠️ Technologies Used
 
 ### Frontend
-- React.js
-- React Router
-- Axios
+- HTML
 - Tailwind CSS
+- React.js
 
 ### Backend
 - Node.js
@@ -36,7 +35,7 @@ Create, read, update, and delete blogs securely with user authentication and acc
 1. **Clone the repository:**
 
 ```bash
- git clone https://github.com/mahendra-singh-jhala/blog-frontend
+ git clone https://github.com/mahendra-singh-jhala/blog-backend
 ```
 
 2. **Install dependencies**
